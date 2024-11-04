@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Converter</title>
+</head>
+<body>
+
+<form>
+
+    <h1>Temperature Conversion</h1>
+    <input type="number" id="text" value="0">
+    <br>
+    <input type="radio" id="Fahrenheit">
+    <label for="Fahrenheit"> Fahrenheit to Celsius</label>
+
+    <input type="radio" id="Celsius">
+    <label for="Celsius">Celsius to Fahrenheit </label>
+    <br>
+    <button id="btn" type="button" onclick="convert()">Submit</button>
+    <p id="result"></p>
+
+</form>
+<script>
+
+let text = document.getElementById("text");
+let r1 = document.getElementById("Fahrenheit");
+let r2 = document.getElementById("Celsius");
+let result = document.getElementById("result");
+
+function convert() {
+    let temp;
+    if (r1.checked) {
+        temp = Number(text.value);
+        temp = (temp - 32) * 5/9;
+        result.textContent = temp.toFixed(2) + " °C";
+    } else if (r2.checked) {
+        temp = Number(text.value);
+        temp = (temp * 9/5) + 32;
+        result.textContent = temp.toFixed(2) + " °F";
+    } else {
+        result.textContent = "Please select a conversion option.";
+    }
+}
+
+</script>
+
+</body>
+</html>

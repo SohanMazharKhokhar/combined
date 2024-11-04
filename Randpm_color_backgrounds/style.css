@@ -1,0 +1,59 @@
+div{
+    border-radius: solid;
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+h1{
+    margin: auto;
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+#btn_color{
+background-color: azure;
+border-radius: 20px;
+border:ridge;
+height: 30px;
+box-shadow:inset;
+box-shadow: black;
+cursor: pointer;
+text-align: center;
+display: block;
+justify-content: center;
+justify-items: center;
+margin: auto;
+}
+#btn_background_color{
+background-color: azure;
+border-radius: 20px;
+border:ridge;
+height: 30px;
+box-shadow:inset;
+box-shadow: black;
+cursor: pointer;
+text-align: center;
+display: block;
+justify-content: center;
+justify-items: center;
+margin: auto;
+}
+#btn_background_color:hover{
+    background-color: rgba(240, 255, 255, 0.398);
+
+}
+#btn_background_color:active{
+    background-color: rgba(240, 255, 255, 0.177);
+
+}
+#btn_color:hover{
+    background-color: rgba(240, 255, 255, 0.398);
+
+}
+#btn_color:active{
+    background-color: rgba(240, 255, 255, 0.177);
+
+}

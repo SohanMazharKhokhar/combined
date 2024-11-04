@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>My Player</title>
+</head>
+<body>
+    <h1>My Player</h1>
+
+    <video id="videoPlayer" src="One.Punch.Man.S01E07.720p.BluRay.Hind-FD.x264.ESub-PikaHD.com.mkv" controls></video>
+    <div id="buttons">
+        <button id="prev">Previous</button>
+        <button id="pause">Pause</button>
+        <button id="next">Next</button>
+    </div>
+
+    <script>
+        const videoPlayer = document.getElementById("videoPlayer");
+        const next = document.getElementById("next");
+        const prev = document.getElementById("prev");
+        const pauseBtn = document.getElementById("pause");
+
+        let currentSong = 0;
+        let songs = [
+            "One.Punch.Man.S01E07.720p.BluRay.Hind-FD.x264.ESub-PikaHD.com.mkv",
+            "One.Punch.Man.S01E08.720p.BluRay.Hind-FD.x264.ESub-PikaHD.com.mkv"
+        ];
+
+        function playSong(index) {
+            videoPlayer.src = songs[index];
+            videoPlayer.play();
+        }
+
+        next.addEventListener("click", function() {
+            currentSong = (currentSong + 1) % songs.length;
+            playSong(currentSong);
+        });
+
+        prev.addEventListener("click", function() {
+            currentSong = (currentSong - 1 + songs.length) % songs.length;
+            playSong(currentSong);
+        });
+
+        pauseBtn.addEventListener("click", function() {
+            if (videoPlayer.paused) {
+                videoPlayer.play();
+            } else {
+                videoPlayer.pause();
+            }
+        });
+    </script>
+</body>
+</html>

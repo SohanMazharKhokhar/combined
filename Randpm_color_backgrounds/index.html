@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <title>Random Background and Color</title>
+</head>
+<body id="body">
+    <h1>Random Color Generator</h1>
+    <div id="div">
+        hello
+    </div>
+    <button id="btn_color">Change Color</button>
+    <button id="btn_background_color">Change Background Color</button>
+    
+<script>
+
+const btn_color=document.getElementById("btn_color");
+const btn_background=document.getElementById("btn_background_color");
+const div=document.getElementById("div");
+function getrandomcolor(){
+    return '#' + Math.floor(Math.random()*16777215).toString(16);
+}
+btn_color.addEventListener("click",function(){
+    div.style.backgroundColor=getrandomcolor();
+})
+
+btn_background.addEventListener("click",function(){
+    body.style.backgroundColor=getrandomcolor();
+})
+</script>
+
+</body>
+</html>

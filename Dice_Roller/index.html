@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Dice Roller</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Dice Roller</h1>
+        <label for="dices">No of Dices #</label>
+        <input type="number" id="input" value="1" min="1">
+        <button id="roll_btn" onclick="roll_dice()">Roll</button>
+        <div id="result"></div>
+        <div id="images"></div>
+    </div>
+
+    <script>
+        function roll_dice() {
+            // Get the current value of the number of dice
+            let num_dice = parseInt(document.getElementById("input").value);
+            var result = document.getElementById("result");
+            var dice_images = document.getElementById("images");
+
+            // Arrays to store values and images
+            const values = [];
+            const images = [];
+
+            for (let i = 0; i < num_dice; i++) {
+                // Roll the dice (value between 1 and 6)
+                const value = Math.floor(Math.random() * 6) + 1;
+                values.push(value);
+                images.push(`<img src="dice_images/${value}.png" alt="Dice ${value}" style="width: 50px; margin-right: 10px;">`);
+            }
+
+            // Update result and images
+            result.textContent = `Dice: ${values.join(', ')}`;
+            dice_images.innerHTML = images.join('');
+        }
+    </script>
+</body>
+</html>

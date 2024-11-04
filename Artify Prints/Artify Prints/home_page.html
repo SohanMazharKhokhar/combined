@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artify Prints</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Artify Prints</h1>
+            <p>Personalized Products</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="product_page.html">Products</a></li>
+                <li><a href="Design_lab.html">Design Lab</a></li>
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Products Section -->
+    <section class="products">
+        <h2>Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="tshirt.png" alt="T-shirts">
+                <h3>T-shirts</h3>
+                <p>Description</p>
+            </div>
+            <div class="product">
+                <img src="mug.png" alt="Mugs">
+                <h3>Mugs</h3>
+                <p>Description</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow the latest trends</p>
+        <form>
+            <input type="email" placeholder="you@example.com">
+            <button type="submit">Submit</button>
+        </form>
+    </footer>
+</body>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.products {
+    padding: 50px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+    width: 100px;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+footer form {
+    margin-top: 10px;
+}
+
+footer form input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+footer form button {
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+}
+
+</style>
+</html>

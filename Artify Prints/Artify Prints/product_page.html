@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirts - Artify Prints</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #28a745;
+        }
+
+        /* Product Details Section */
+        .product-details {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 100px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 30px auto;
+            border-radius: 8px;
+            max-width: 1200px;
+        }
+
+        .product-info {
+            width: 50%;
+        }
+
+        .product-info img {
+            width: 300px;
+            height: auto;
+            display: block;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        .product-info h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .product-info .price {
+            font-size: 24px;
+            color: #28a745;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .custom-options label {
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .custom-options select {
+            padding: 5px 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 12px 25px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            width: 40%;
+        }
+
+        .reviews h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .review {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .review h4 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .review p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .reviewer {
+            font-size: 12px;
+            color: #777;
+        }
+
+        /* Footer */
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Artify Prints</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home_page.html">Home</a></li>
+                <li><a href="product_page.html">Products</a></li>
+                <li><a href="design_lab.html">Design Lab</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Details Section -->
+    <section class="product-details">
+        <div class="product-info">
+            <img src="tshirt.png" alt="T-shirt">
+            <h3>T-Shirts</h3>
+            <span class="price">$20</span>
+            <div class="custom-options">
+                <label for="label">Size:</label>
+                <select id="label">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+            </div>
+            <button>Add to Cart</button>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews">
+            <h3>Latest Reviews</h3>
+            <div class="review">
+                <h4>Great quality T-shirt!</h4>
+                <p>The fabric is soft and the print is amazing. I love it!</p>
+                <p class="reviewer">John Doe - September 20, 2024</p>
+            </div>
+            <div class="review">
+                <h4>Perfect fit!</h4>
+                <p>I was skeptical about the size, but it fits perfectly. Highly recommended!</p>
+                <p class="reviewer">Jane Smith - September 22, 2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Artify Prints. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

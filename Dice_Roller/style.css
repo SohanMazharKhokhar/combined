@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(184, 237, 237);
+}
+#container{
+    background-color: rgb(178, 223, 235);
+display: block;
+text-align: center;
+margin-top: 150px;
+border-radius: 20px;
+padding: 40px;
+
+}
+h1{
+    color: blue;
+    font-style: italic;
+    font-size: 50px;
+}
+label{
+    font-size: 40px;
+    color: rgb(72, 42, 221);
+}
+#result{
+color: blue;
+font-size:x-large;
+}
+input{
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 20px;
+    border: none;
+}
+button{
+    height: 40px;
+    width: 70px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+img{
+    width: 100px;
+    margin: 10px;
+
+}
+button:hover{
+    background-color: rgba(0, 0, 255, 0.87);
+}
+button:active{
+    background-color: rgba(0, 0, 255, 0.632);
+}

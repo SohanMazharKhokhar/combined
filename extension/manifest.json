@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Logo Remover",
+    "version": "1.0",
+    "description": "A Chrome extension to remove the YouTube logo.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  

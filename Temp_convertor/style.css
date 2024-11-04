@@ -1,0 +1,25 @@
+body{
+  
+    background-color: rgb(230, 230, 230);
+}
+h1{
+    color: #0000ffd1;
+}
+form{
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.447);
+}
+#text{
+    text-align: center;
+    font-size: 2em;
+    width: 80px;
+}
+#btn{
+    color: rgb(6, 35, 35);
+    background-color: aliceblue;
+    height: 50px;
+}
